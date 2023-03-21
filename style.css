@@ -30,7 +30,7 @@ nav{
     height: 80px;
     line-height: 80px;
     z-index: 111;
-    /* background-color: red; */
+    /* background-color:#442167; */
 }
 
 .logo{
@@ -62,7 +62,8 @@ b{
 
 .navItems li a{
     font-size: 25px;
-    color: #3d535f;
+    /* color: #3d535f; */
+    color: #7486a4;
     letter-spacing: 3px;
     text-decoration: none;
     text-transform: capitalize;
@@ -257,6 +258,7 @@ button:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    line-height: 5vh;
 }
 
 #aboutHeader{
@@ -266,15 +268,17 @@ button:hover{
     font-size: 4em;
     justify-items: center;
     align-items: center;
+    padding-bottom: 3vh;
 }
 
 #aboutP1, #aboutP2, #aboutP3, #aboutP4, #aboutP5, #aboutP6, #aboutP7{
     display: grid;
-    justify-items: center;
+    justify-items:flex-start;
     color: white;
     text-transform: capitalize;
     font-size: 1.5em;
     font-weight: 600;
+    text-align: left;
 }
 
 #skill1{
@@ -286,10 +290,10 @@ button:hover{
     margin-top: 10vh;
 }
 
-#skill1:hover{
+/* #skill1:hover{
     color: #ded9e3;
     transition: .5s;
-}
+} */
 
 #skill2{
     width: 100%;
@@ -376,15 +380,15 @@ font-size: 1.5vh;
 }
 
 .logo:hover{
-    color:white;
+    color:#7f00ff;
     transition: .35s;
 }
 .topline:hover{
-    color:white;
+    /* color:white; */
     transition: .35s;
 }
 .ima:hover{
-    color:white;
+    /* color:white; */
     transition: .35s;
 }
 /* .multiText:hover{
@@ -395,14 +399,16 @@ font-size: 1.5vh;
     color:white;
     transition: .35s;
 } */
-#aboutHeader:hover{
+/* #aboutHeader:hover{
     color:white;
     transition: .35s;
 }
 #projectsHead:hover{
     color:white;
     transition: .35s;
-}
+} */
+
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 *::-webkit-scrollbar {
     display: none;
@@ -457,9 +463,9 @@ a{
     text-decoration: none;
 }
 
-p{
+/* p{
     text-align: center;
-}
+} */
 
 .langPercentClass{
     text-align: center;

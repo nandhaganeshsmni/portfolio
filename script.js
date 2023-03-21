@@ -7,38 +7,45 @@ aboutDiv2.appendChild(aboutHeader);
 ////////////// p //////////////
 
 let aboutP4=document.createElement("p");
-aboutP4.innerText="I'm Nandha Ganesh S, Software Tester";
+aboutP4.innerText="☸️ I'm Nandha Ganesh S, Software Tester";
 aboutP4.setAttribute("id", "aboutP4");
+aboutP4.setAttribute("class", "ptag");
 aboutDiv2.appendChild(aboutP4);
 
 let aboutP1=document.createElement("p");
-aboutP1.innerText="My native place is R.Reddia patti, now i'm from sengkottai";
+aboutP1.innerText="☸️ My native place is R.Reddia patti, now i'm from sengkottai";
 aboutP1.setAttribute("id", "aboutP1");
+aboutP1.setAttribute("class", "ptag");
 aboutDiv2.appendChild(aboutP1);
 
 let aboutP2=document.createElement("p");
-aboutP2.innerText="I studied D.EEE in P.A.C.Ramasamy Raja polytechnic college, Rajapalayam";
+aboutP2.innerText="☸️ I studied D.EEE in P.A.C.Ramasamy Raja polytechnic college";
 aboutP2.setAttribute("id", "aboutP2");
+aboutP2.setAttribute("class", "ptag");
 aboutDiv2.appendChild(aboutP2);
 
 let aboutP3=document.createElement("p");
-aboutP3.innerText="My hobby is playing cricket and chess";
+aboutP3.innerText="☸️ Hobby: playing cricket and chess";
 aboutP3.setAttribute("id", "aboutP3");
+aboutP3.setAttribute("class", "ptag");
 aboutDiv2.appendChild(aboutP3);
 
 let aboutP5=document.createElement("p");
-aboutP5.innerText="Ph.no: 6383370197";
+aboutP5.innerText="☸️ Ph.no: 6383370197";
 aboutP5.setAttribute("id", "aboutP5");
+aboutP5.setAttribute("class", "ptag");
 aboutDiv2.appendChild(aboutP5);
 
 let aboutP6=document.createElement("p");
-aboutP6.innerText="snmahismn@gmail.com";
+aboutP6.innerText="☸️ GMail: snmahismn@gmail.com";
 aboutP6.setAttribute("id", "aboutP6");
+aboutP6.setAttribute("class", "ptag");
 aboutDiv2.appendChild(aboutP6);
 
 let aboutP7=document.createElement("p");
-aboutP7.innerText="AGE - 20";
+aboutP7.innerText="☸️ DOB: 19/06/2002";
 aboutP7.setAttribute("id", "aboutP7");
+aboutP7.setAttribute("class", "ptag");
 aboutDiv2.appendChild(aboutP7);
 
 //////////////////////////////////////// root3 //////////////////////////////////////
@@ -53,10 +60,12 @@ let skill2=document.createElement("div");
 skill2.setAttribute("id", "skill2");
 root3.appendChild(skill2);
 
-let nameArr=["Scratch", "HTML", "CSS", "Javascript", "Java", "Manual Testing", "Selenium IDE", "Selenium WebDriver", "TestNG"];
-let imgArr=["scratch.jpg", "html.png", "css.png", "js.png", "java.jpg", "Manual-Testing.png", "side.png", "Selenium-3-webdriver.jpg", "testNG.jpg"];
-let percentArr=["100%", "90%", "90%", "60%", "Basics", "100%", "90%", "90%", "90%"];
-for(let i=0;i<9;i++){
+// let nameArr=["Scratch", "", "Java", "Selenium IDE", "Selenium WebDriver", "TestNG"];
+let imgArr=["scratch.jpg", "htmlcssjs.png", "java.jpg", "side.png", "Selenium-3-webdriver.jpg", "testNG.jpg"];
+imgArr=imgArr.reverse();
+let percentArr=["100%", "60%", "Basics", "70%", "75%", "70%"];
+percentArr.reverse();
+for(let i=0;i<6;i++){
     let lang=document.createElement("div");
     lang.setAttribute("id","i"+i);
     lang.style.setProperty("border", "1px solid black");
@@ -79,7 +88,7 @@ for(let i=0;i<9;i++){
     lang.appendChild(langImages);
     let langName=document.createElement("p");
     langName.setAttribute("id", "langName"+i);
-    langName.innerText=nameArr[i];
+    // langName.innerText=nameArr[i];
     langName.style.setProperty("color", "rgba(0,255,255,0.7)");
     langName.style.setProperty("font-weight", "bolder");
     langName.style.setProperty("display", "grid");
@@ -129,8 +138,9 @@ mainButton.setAttribute("id", "mainButton");
 root4.appendChild(mainButton);
 
 
-let buttonArr=["Scratch", "JavaScript", "Manual Testing", "Selenium IDE", "WebDriver", "TestNG"];
-for(let j=0;j<6;j++){
+let buttonArr=["Scratch", "JavaScript", "Java", "Manual Testing", "Selenium IDE", "WebDriver", "TestNG"];
+buttonArr=buttonArr.reverse();
+for(let j=0;j<7;j++){
     let projButton=document.createElement("button");
     projButton.setAttribute("id", "projButton"+j);
     projButton.setAttribute("class", "projButtonClass");
@@ -195,6 +205,30 @@ const projectDetails=[
         link:"https://rockpaperscissor.snmahismnandhu.repl.co/",
         path:"rockpaperscissors.png",
         type:"javascript"
+    },
+
+    {
+        name:"DayFinder",
+        description:"Standard to RailWayTime",
+        link:"https://one.zoho.com/zohoone/zohocorp/home/cxapp/workdrive/home/6oq3d00e1e07d58c64077b4f1c1f28da4a777/privatespace/sharedwithme/allusers/rynsd799753044a9141eeb6946d633016196c?frameorigin=https%3A%2F%2Fone.zoho.com",
+        path:"java.jpeg",
+        type:"java"
+    },
+
+    {
+        name:"Maths",
+        description:"EvenFib, NumFilter",
+        link:"https://one.zoho.com/zohoone/zohocorp/home/cxapp/workdrive/home/6oq3d00e1e07d58c64077b4f1c1f28da4a777/privatespace/sharedwithme/allusers/rynsd799753044a9141eeb6946d633016196c?frameorigin=https%3A%2F%2Fone.zoho.com",
+        path:"java.jpeg",
+        type:"java"
+    },
+
+    {
+        name:"Anagram",
+        description:"Caps, Spoonerize",
+        link:"https://one.zoho.com/zohoone/zohocorp/home/cxapp/workdrive/home/6oq3d00e1e07d58c64077b4f1c1f28da4a777/privatespace/sharedwithme/allusers/rynsd799753044a9141eeb6946d633016196c?frameorigin=https%3A%2F%2Fone.zoho.com",
+        path:"java.jpeg",
+        type:"java"
     },
 
     {
@@ -308,7 +342,7 @@ function buttonShadesOff(elem){
 }
 
 function projectSortingFunction(elem){
-   
+    console.log("Hi "+elem);
     for(let i=0;i<document.getElementsByClassName("projButtonClass").length;i++){
         if(elem.toLowerCase()===document.getElementsByClassName("projButtonClass")[i].innerText){
             document.getElementsByClassName("projButtonClass")[i].style.setProperty("background-color", "white");
@@ -354,42 +388,42 @@ function closeDetails(elem) {
 }
 
 ////////////////////////// email //////////////////////////////
-let pArr=["NAME", "EMAIL-ID", "SUBJECT"];
-let containerEmail=document.getElementsByClassName("containerEmail")[0];
+// let pArr=["NAME", "EMAIL-ID", "SUBJECT"];
+// let containerEmail=document.getElementsByClassName("containerEmail")[0];
 
-for (let i = 0; i < 3; i++) {
-    let inputs=document.createElement("input");
-    inputs.setAttribute("id", "ipId"+i);
-    inputs.setAttribute("class", "ipClass");
-    inputs.style.setProperty("width", "49%");
-    inputs.style.setProperty("height", "4vh");
-    inputs.style.setProperty("padding", "2vh");
-    inputs.setAttribute("placeholder", pArr[i]);
-    inputs.style.setProperty("border-radius", "1%");
-    inputs.style.setProperty("border", "none");
-    inputs.style.setProperty("outline", "none");
-    inputs.setAttribute("type", "text");
-    containerEmail.appendChild(inputs);
-}
+// for (let i = 0; i < 3; i++) {
+//     let inputs=document.createElement("input");
+//     inputs.setAttribute("id", "ipId"+i);
+//     inputs.setAttribute("class", "ipClass");
+//     inputs.style.setProperty("width", "49%");
+//     inputs.style.setProperty("height", "4vh");
+//     inputs.style.setProperty("padding", "2vh");
+//     inputs.setAttribute("placeholder", pArr[i]);
+//     inputs.style.setProperty("border-radius", "1%");
+//     inputs.style.setProperty("border", "none");
+//     inputs.style.setProperty("outline", "none");
+//     inputs.setAttribute("type", "text");
+//     containerEmail.appendChild(inputs);
+// }
 
-let textArea=document.createElement("textarea");
-textArea.setAttribute("id", "textArea");
-textArea.setAttribute("class", "textClass");
-containerEmail.appendChild(textArea);
-textArea.style.setProperty("width", "49%");
-    textArea.style.setProperty("height", "14vh");
-    textArea.style.setProperty("padding", "2vh");
-    textArea.setAttribute("placeholder", "content");
-    textArea.style.setProperty("border-radius", "1%");
-    textArea.style.setProperty("border", "none");
-    textArea.style.setProperty("outline", "none");
+// let textArea=document.createElement("textarea");
+// textArea.setAttribute("id", "textArea");
+// textArea.setAttribute("class", "textClass");
+// containerEmail.appendChild(textArea);
+// textArea.style.setProperty("width", "49%");
+//     textArea.style.setProperty("height", "14vh");
+//     textArea.style.setProperty("padding", "2vh");
+//     textArea.setAttribute("placeholder", "content");
+//     textArea.style.setProperty("border-radius", "1%");
+//     textArea.style.setProperty("border", "none");
+//     textArea.style.setProperty("outline", "none");
 
-let submitMail=document.createElement("button");
-submitMail.setAttribute("id", "submitMail");
-submitMail.setAttribute("class", "submitClass");
-submitMail.setAttribute("onclick", "sendEmail()");
-submitMail.innerText="SUBMIT";
-containerEmail.appendChild(submitMail);
+// let submitMail=document.createElement("button");
+// submitMail.setAttribute("id", "submitMail");
+// submitMail.setAttribute("class", "submitClass");
+// submitMail.setAttribute("onclick", "sendEmail()");
+// submitMail.innerText="SUBMIT";
+// containerEmail.appendChild(submitMail);
 
 function changeColor(){
     let changeColor=document.getElementById("navi");
@@ -397,28 +431,47 @@ function changeColor(){
     console.log(1);
 }
 
-function sendEmail() {
-    /* // Get the email address from the input box */
+// function sendEmail() {
+//     /* // Get the email address from the input box */
     
   
-    /* // Send the email using EmailJS */
-    emailjs.init("i11FkZVnn9SYxmwES");
-    var params = {
-        from_name: document.getElementById("ipId0").value,
-        mailid: document.getElementById("ipId1").value,
-        sub:document.getElementById("ipId2").value,
-        msg:document.getElementById("textArea").value
-    };
-    emailjs.send("service_c1m9zob", "template_ivrzp73", params)
-        .then(function(response) {
-            console.log("Email sent", response);
-        }, function(error) {
-            console.log("Error sending email", error);
-        });
-  }
+//     /* // Send the email using EmailJS */
+//     emailjs.init("i11FkZVnn9SYxmwES");
+//     var params = {
+//         from_name: document.getElementById("ipId0").value,
+//         mailid: document.getElementById("ipId1").value,
+//         sub:document.getElementById("ipId2").value,
+//         msg:document.getElementById("textArea").value
+//     };
+//     emailjs.send("service_c1m9zob", "template_ivrzp73", params)
+//         .then(function(response) {
+//             console.log("Email sent", response);
+//         }, function(error) {
+//             console.log("Error sending email", error);
+//         });
+//   }
 
 
 
-projectSortingFunction("testng");
+projectSortingFunction("TestNG");
 
-
+// let themeDiv=0;
+// function themeFun(){
+//     console.log("themeFun");
+//     if(themeDiv==0){
+//         console.log("d");
+//         let body=document.getElementsByTagName("body")[0];
+//     body.style.setProperty("background-color", "white");
+//     let ptag=document.getElementsByClassName("ptag")[0];
+//     ptag.style.setProperty("color", "black");
+//     themeDiv=1;
+//     }
+//     else{
+//         console.log("l");
+//         let body=document.getElementsByTagName("body")[0];
+//         body.style.setProperty("background-color", "black");
+//         let ptag=document.getElementsByClassName("ptag")[0];
+//         ptag.style.setProperty("color", "white");
+//         themeDiv=0;
+//     }
+// }
