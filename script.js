@@ -210,7 +210,7 @@ const projectDetails=[
     {
         name:"DayFinder",
         description:"Standard to RailWayTime",
-        link:"https://one.zoho.com/zohoone/zohocorp/home/cxapp/workdrive/home/6oq3d00e1e07d58c64077b4f1c1f28da4a777/privatespace/sharedwithme/allusers/rynsd799753044a9141eeb6946d633016196c?frameorigin=https%3A%2F%2Fone.zoho.com",
+        link:"https://replit.com/@snmahismnandhu/DayFinderjava#Main.java",
         path:"java.jpeg",
         type:"java"
     },
@@ -218,7 +218,7 @@ const projectDetails=[
     {
         name:"Maths",
         description:"EvenFib, NumFilter",
-        link:"https://one.zoho.com/zohoone/zohocorp/home/cxapp/workdrive/home/6oq3d00e1e07d58c64077b4f1c1f28da4a777/privatespace/sharedwithme/allusers/rynsd799753044a9141eeb6946d633016196c?frameorigin=https%3A%2F%2Fone.zoho.com",
+        link:"https://replit.com/@snmahismnandhu/Mathsjava",
         path:"java.jpeg",
         type:"java"
     },
@@ -226,7 +226,7 @@ const projectDetails=[
     {
         name:"Anagram",
         description:"Caps, Spoonerize",
-        link:"https://one.zoho.com/zohoone/zohocorp/home/cxapp/workdrive/home/6oq3d00e1e07d58c64077b4f1c1f28da4a777/privatespace/sharedwithme/allusers/rynsd799753044a9141eeb6946d633016196c?frameorigin=https%3A%2F%2Fone.zoho.com",
+        link:"https://replit.com/@snmahismnandhu/Anagramjava#Main.java",
         path:"java.jpeg",
         type:"java"
     },
