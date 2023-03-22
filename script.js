@@ -63,7 +63,7 @@ root3.appendChild(skill2);
 // let nameArr=["Scratch", "", "Java", "Selenium IDE", "Selenium WebDriver", "TestNG"];
 let imgArr=["scratch.jpg", "htmlcssjs.png", "java.jpg", "side.png", "Selenium-3-webdriver.jpg", "testNG.jpg"];
 imgArr=imgArr.reverse();
-let percentArr=["100%", "60%", "Basics", "70%", "75%", "70%"];
+let percentArr=["75%", "60%", "Basics", "70%", "75%", "70%"];
 percentArr.reverse();
 for(let i=0;i<6;i++){
     let lang=document.createElement("div");
