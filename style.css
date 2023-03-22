@@ -327,8 +327,8 @@ button:hover{
 }
 
 .projButtonClass{
-    color: white;
-    background-color: #7f00ff;
+    color:#7f00ff;
+    background-color: white;
 }
 
 .projButtonClass:hover{
@@ -472,3 +472,17 @@ a{
     color:rgba(0, 255, 255, 0.7);
 }
 
+.langBar{
+    width: 52%;
+    border: 2px solid rgba(0, 255, 255, 0.7);;
+    height: 2vh;
+    overflow: hidden;
+    border-radius: 5vh;
+}
+
+.langBarRange{
+    height: 100%;
+    /* width: 75%; */
+    background-color: rgba(0, 255, 255, 0.7);
+    border-radius: 5vh;
+}

@@ -63,7 +63,7 @@ root3.appendChild(skill2);
 // let nameArr=["Scratch", "", "Java", "Selenium IDE", "Selenium WebDriver", "TestNG"];
 let imgArr=["scratch.jpg", "htmlcssjs.png", "java.jpg", "side.png", "Selenium-3-webdriver.jpg", "testNG.jpg"];
 imgArr=imgArr.reverse();
-let percentArr=["75%", "60%", "Basics", "70%", "75%", "70%"];
+let percentArr=["70%", "60%", "50%", "70%", "75%", "70%"];
 percentArr.reverse();
 for(let i=0;i<6;i++){
     let lang=document.createElement("div");
@@ -86,6 +86,15 @@ for(let i=0;i<6;i++){
     lang.setAttribute("onmouseover", "hoverOnFun(this)");
     lang.setAttribute("onmouseout", "hoverOutFun(this)");
     lang.appendChild(langImages);
+    let langBar=document.createElement("div");
+    langBar.setAttribute("id", "langBar"+i);
+    langBar.setAttribute("class", "langBar");
+    let langBarRange=document.createElement("div");
+    langBarRange.setAttribute("id", "langBarRange"+i);
+    langBarRange.setAttribute("class", "langBarRange");
+    langBarRange.style.setProperty("width", percentArr[i]);
+    langBar.appendChild(langBarRange);
+    lang.appendChild(langBar);
     let langName=document.createElement("p");
     langName.setAttribute("id", "langName"+i);
     // langName.innerText=nameArr[i];
@@ -104,20 +113,24 @@ for(let i=0;i<6;i++){
 
 function hoverOnFun(elem){
     elem.firstChild.style.setProperty("transform", "scale(1.1)");
+    elem.children[1].style.setProperty("border", "2px solid #7f00ff");
+    elem.children[1].firstChild.style.setProperty("background-color", "#7f00ff");
     elem.lastChild.style.setProperty("color", "#7f00ff");
     elem.firstChild.style.setProperty("transition", ".35s");
     elem.lastChild.style.setProperty("transition", ".35s");
     elem.style.setProperty("transition", ".35s");
-    // elem.style.setProperty("box-shadow", "inset 0px 5px 10px 0px rgba(7f,00,ff,0.7)");
+    elem.style.setProperty("box-shadow", "inset 0px 5px 10px 0px #7f00ff");
 }
 
 function hoverOutFun(elem){
     elem.firstChild.style.setProperty("transform", "scale(1)");
+    elem.children[1].style.setProperty("border", "2px solid rgba(0,255,255,0.7)");
+    elem.children[1].firstChild.style.setProperty("background-color", "rgba(0,255,255,0.7)");
     elem.lastChild.style.setProperty("color", "rgba(0,255,255,0.7)");
     elem.firstChild.style.setProperty("transition", ".35s");
     elem.lastChild.style.setProperty("transition", ".35s");
     elem.style.setProperty("transition", ".35s");
-    // elem.style.setProperty("box-shadow", "inset 0px 5px 10px 0px rgba(0,255,255,0.7)");
+    elem.style.setProperty("box-shadow", "inset 0px 5px 10px 0px rgba(0,255,255,0.7)");
 }
 
 
@@ -145,8 +158,8 @@ for(let j=0;j<7;j++){
     projButton.setAttribute("id", "projButton"+j);
     projButton.setAttribute("class", "projButtonClass");
     projButton.setAttribute("onclick", `projectSortingFunction('${buttonArr[j]}')`);
-    projButton.setAttribute("onmouseover", "buttonShades(this)");
-    projButton.setAttribute("onmouseout", "buttonShadesOff(this)");
+    // projButton.setAttribute("onmouseenter", "buttonShades(this)");
+    // projButton.setAttribute("onmouseleave", "buttonShadesOff(this)");
     projButton.innerText=buttonArr[j];
     mainButton.appendChild(projButton);
 }
@@ -211,7 +224,7 @@ const projectDetails=[
         name:"DayFinder",
         description:"Standard to RailWayTime",
         link:"https://replit.com/@snmahismnandhu/DayFinderjava#Main.java",
-        path:"java.jpeg",
+        path:"Dayfinder.jpg",
         type:"java"
     },
 
@@ -219,7 +232,7 @@ const projectDetails=[
         name:"Maths",
         description:"EvenFib, NumFilter",
         link:"https://replit.com/@snmahismnandhu/Mathsjava",
-        path:"java.jpeg",
+        path:"Maths.png",
         type:"java"
     },
 
@@ -227,7 +240,7 @@ const projectDetails=[
         name:"Anagram",
         description:"Caps, Spoonerize",
         link:"https://replit.com/@snmahismnandhu/Anagramjava#Main.java",
-        path:"java.jpeg",
+        path:"Anagram.png",
         type:"java"
     },
 
@@ -342,16 +355,18 @@ function buttonShadesOff(elem){
 }
 
 function projectSortingFunction(elem){
-    console.log("Hi "+elem);
+    // console.log("Hi "+elem);
     for(let i=0;i<document.getElementsByClassName("projButtonClass").length;i++){
-        if(elem.toLowerCase()===document.getElementsByClassName("projButtonClass")[i].innerText){
-            document.getElementsByClassName("projButtonClass")[i].style.setProperty("background-color", "white");
-            document.getElementsByClassName("projButtonClass")[i].style.setProperty("color", "#7f00ff");
+        if(elem.toLowerCase()===(document.getElementsByClassName("projButtonClass")[i].innerText).toLowerCase()){
+            console.log("hoveron");
+            document.getElementsByClassName("projButtonClass")[i].style.setProperty("background-color", "#7f00ff");
+            document.getElementsByClassName("projButtonClass")[i].style.setProperty("color", "white");
         }
 
         else{
-            document.getElementsByClassName("projButtonClass")[i].style.setProperty("background-color", "#7f00ff");
-            document.getElementsByClassName("projButtonClass")[i].style.setProperty("color", "white");   
+            console.log("hoveroff");
+            document.getElementsByClassName("projButtonClass")[i].style.setProperty("background-color", "white");
+            document.getElementsByClassName("projButtonClass")[i].style.setProperty("color", "#7f00ff");  
         }
     }
     projectScreen.innerHTML="";
